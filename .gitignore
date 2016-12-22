@@ -1,0 +1,11 @@
+*.pyc
+*.swp
+
+.ropeproject
+.project
+.pydevproject
+.settings
+
+build
+dist
+*egg-info

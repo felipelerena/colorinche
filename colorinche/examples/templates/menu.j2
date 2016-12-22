@@ -1,0 +1,5 @@
+{{titulo}}
+{% for opcion in opciones %}
+{% bless 'red' %}{{opcion.0}}) {% end %}
+{% bless 'red_on_blue' %}{{opcion.1}}{% end %} {{opcion.2}}
+{% endfor %}
