@@ -1,5 +1,9 @@
-{{titulo}}
-{% for opcion in opciones %}
-{% bless 'red' %}{{opcion.0}}) {% end %}
-{% bless 'red_on_blue' %}{{opcion.1}}{% end %} {{opcion.2}}
+{% location 0, 0 %}
+{% bless 'white_bold' %}{{title}}{% end %}
+
+{% for option in options %}
+{% bless 'red' %}{{option.0}}) {% end %}
+{% bless 'bold_underline_blue' %}{{option.1}}{% end %} - {% bless 'yellow_on_white' %}{{option.2}}{% end %}
+
 {% endfor %}
+{% endlocation %}

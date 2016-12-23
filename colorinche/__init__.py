@@ -1,16 +1,20 @@
 #! /usr/bin/env python3
 from jinja2 import Environment, FileSystemLoader
 
-from colorinche.extensions import BlessingsExtension
+from colorinche.extensions import BlessingsExtension, LocationExtension
 
 
 _env = None
 
 
-def set_env(path):
+def set_env(path=None):
     global _env
+
+    if path is None:
+        path = "templates"
+
     _env = Environment(loader=FileSystemLoader(path),
-                       extensions=[BlessingsExtension],
+                       extensions=[BlessingsExtension, LocationExtension],
                        trim_blocks=True,
                        lstrip_blocks=True)
 

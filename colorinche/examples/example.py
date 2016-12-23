@@ -1,21 +1,25 @@
 #! /usr/bin/env python3
+from blessings import Terminal
 from colorinche import print_template, set_env
 
 def main():
     set_env()
     template = "menu.j2"
+    term = Terminal()
 
-    opciones = [
-        [1, "uno"],
-        [2, "dos"],
-        [3, "tres"]
+    options = [
+        [1, "First", "the first option"],
+        [2, "Second", "the middle option"],
+        [3, "Third", "the final option"]
     ]
 
     data = {
-        "titulo": "Hola",
-        "opciones": opciones,
+        "title": "Awesome Example",
+        "options": options,
     }
-    print_template(template, data)
+    with term.fullscreen():
+        print_template(template, data)
+        input("Press Enter to close")
 
 
 if __name__ == '__main__':
