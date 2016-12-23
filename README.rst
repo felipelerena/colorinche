@@ -41,6 +41,8 @@ Then you create a Jinja template
 
 And that's it. You get your pretty Terminal with Blessings charm and your code will be clean.
 
+.. image:: ./screenshots/screenshot.png
+
 Installation
 ============
 With pip
