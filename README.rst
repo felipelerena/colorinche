@@ -1,6 +1,6 @@
 Colorinche
 =================================
-Colorinche is a Python package to create beautiful CLIs with Blessings from Jinja templates.
+Colorinche is a Python package to create beautiful CLIs with `Blessings <https://pypi.python.org/pypi/blessings/>`_ from `Jinja2 <http://jinja.pocoo.org>`_ templates.
 
 How does it works?
 ==================
